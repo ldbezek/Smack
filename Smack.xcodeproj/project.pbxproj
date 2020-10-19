@@ -14,6 +14,8 @@
 		A30BA248253B4FE600B89E87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A30BA247253B4FE600B89E87 /* Assets.xcassets */; };
 		A30BA24B253B4FE600B89E87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A30BA249253B4FE600B89E87 /* LaunchScreen.storyboard */; };
 		A344437E253DE79D00DB5239 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A344437D253DE79D00DB5239 /* GradientView.swift */; };
+		A3444382253DF46500DB5239 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3444381253DF46500DB5239 /* Constants.swift */; };
+		A3444386253DFEA900DB5239 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3444385253DFEA800DB5239 /* LoginVC.swift */; };
 		A3AB5E9B253D49B700D2607D /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3AB5E9A253D49B700D2607D /* SWRevealViewController.m */; };
 		A3AB5EA1253D4D6B00D2607D /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AB5EA0253D4D6B00D2607D /* ChatVC.swift */; };
 		A3AB5EA4253D4D7B00D2607D /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AB5EA3253D4D7B00D2607D /* ChannelVC.swift */; };
@@ -30,6 +32,8 @@
 		A30BA24A253B4FE600B89E87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A30BA24C253B4FE600B89E87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A344437D253DE79D00DB5239 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		A3444381253DF46500DB5239 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A3444385253DFEA800DB5239 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		A3AB5E98253D49B600D2607D /* Smack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smack-Bridging-Header.h"; sourceTree = "<group>"; };
 		A3AB5E99253D49B700D2607D /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		A3AB5E9A253D49B700D2607D /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -73,6 +77,7 @@
 		A30BA23D253B4FE300B89E87 /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				A3444380253DF44B00DB5239 /* Utilities */,
 				A3AB5E9F253D4D3F00D2607D /* Model */,
 				A3AB5E9E253D4D3700D2607D /* View */,
 				A3AB5E9D253D4D3000D2607D /* Controller */,
@@ -85,6 +90,14 @@
 				A30BA24C253B4FE600B89E87 /* Info.plist */,
 			);
 			path = Smack;
+			sourceTree = "<group>";
+		};
+		A3444380253DF44B00DB5239 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A3444381253DF46500DB5239 /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		A3AB5E97253D498C00D2607D /* Supporting Files */ = {
@@ -102,6 +115,7 @@
 			children = (
 				A3AB5EA0253D4D6B00D2607D /* ChatVC.swift */,
 				A3AB5EA3253D4D7B00D2607D /* ChannelVC.swift */,
+				A3444385253DFEA800DB5239 /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -253,8 +267,10 @@
 			files = (
 				A3AB5EA1253D4D6B00D2607D /* ChatVC.swift in Sources */,
 				A30BA23F253B4FE300B89E87 /* AppDelegate.swift in Sources */,
+				A3444386253DFEA900DB5239 /* LoginVC.swift in Sources */,
 				A344437E253DE79D00DB5239 /* GradientView.swift in Sources */,
 				A30BA241253B4FE300B89E87 /* SceneDelegate.swift in Sources */,
+				A3444382253DF46500DB5239 /* Constants.swift in Sources */,
 				A3AB5E9B253D49B700D2607D /* SWRevealViewController.m in Sources */,
 				A3AB5EA4253D4D7B00D2607D /* ChannelVC.swift in Sources */,
 			);
