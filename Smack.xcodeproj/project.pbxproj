@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		A30BA246253B4FE300B89E87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A30BA244253B4FE300B89E87 /* Main.storyboard */; };
 		A30BA248253B4FE600B89E87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A30BA247253B4FE600B89E87 /* Assets.xcassets */; };
 		A30BA24B253B4FE600B89E87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A30BA249253B4FE600B89E87 /* LaunchScreen.storyboard */; };
+		A344437E253DE79D00DB5239 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A344437D253DE79D00DB5239 /* GradientView.swift */; };
 		A3AB5E9B253D49B700D2607D /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3AB5E9A253D49B700D2607D /* SWRevealViewController.m */; };
 		A3AB5EA1253D4D6B00D2607D /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AB5EA0253D4D6B00D2607D /* ChatVC.swift */; };
 		A3AB5EA4253D4D7B00D2607D /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AB5EA3253D4D7B00D2607D /* ChannelVC.swift */; };
@@ -28,6 +29,7 @@
 		A30BA247253B4FE600B89E87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A30BA24A253B4FE600B89E87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A30BA24C253B4FE600B89E87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A344437D253DE79D00DB5239 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		A3AB5E98253D49B600D2607D /* Smack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smack-Bridging-Header.h"; sourceTree = "<group>"; };
 		A3AB5E99253D49B700D2607D /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		A3AB5E9A253D49B700D2607D /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 		A3AB5E9E253D4D3700D2607D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A344437D253DE79D00DB5239 /* GradientView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 			files = (
 				A3AB5EA1253D4D6B00D2607D /* ChatVC.swift in Sources */,
 				A30BA23F253B4FE300B89E87 /* AppDelegate.swift in Sources */,
+				A344437E253DE79D00DB5239 /* GradientView.swift in Sources */,
 				A30BA241253B4FE300B89E87 /* SceneDelegate.swift in Sources */,
 				A3AB5E9B253D49B700D2607D /* SWRevealViewController.m in Sources */,
 				A3AB5EA4253D4D7B00D2607D /* ChannelVC.swift in Sources */,
