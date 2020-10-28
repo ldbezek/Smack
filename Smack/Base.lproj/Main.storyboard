@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -265,7 +265,7 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IG1-4J-Ayc">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IG1-4J-Ayc" customClass="RoundedButton" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="62.5" y="267.5" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -276,6 +276,11 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bdx-8N-XJE"/>
@@ -335,6 +340,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createAccntBtnPressed:" destination="lqL-WZ-Lm0" eventType="touchUpInside" id="jYq-97-CbP"/>
+                                    <action selector="pickAvatarPressed:" destination="nMO-6v-F9N" eventType="touchUpInside" id="zlO-k4-1yu"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="l9Y-dE-WMQ">
@@ -393,7 +399,7 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxV-EH-ALU">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxV-EH-ALU" customClass="RoundedButton" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="62.5" y="577" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -404,6 +410,14 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="createAccntPressed:" destination="nMO-6v-F9N" eventType="touchUpInside" id="UCE-BY-n7Z"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="INC-3M-sTD">
                                 <rect key="frame" x="137.5" y="302" width="100" height="100"/>
@@ -424,6 +438,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createAccntBtnPressed:" destination="lqL-WZ-Lm0" eventType="touchUpInside" id="TAW-JW-zhV"/>
+                                    <action selector="pickBGColorPressed:" destination="nMO-6v-F9N" eventType="touchUpInside" id="AmQ-Pt-mbp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -449,6 +464,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="IpS-Ci-6MN"/>
                     <connections>
+                        <outlet property="emailTxt" destination="8HK-qV-Cr8" id="iM5-ai-RKf"/>
+                        <outlet property="passTxt" destination="isi-aT-Bg6" id="KNI-xa-dby"/>
+                        <outlet property="userImg" destination="INC-3M-sTD" id="LvB-ty-aSd"/>
+                        <outlet property="usernameTxt" destination="vPY-o7-5cC" id="j72-El-43J"/>
                         <segue destination="5Vr-69-Gzw" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="V3z-8z-JXP"/>
                     </connections>
                 </viewController>
@@ -458,6 +477,14 @@
             <point key="canvasLocation" x="2448.8000000000002" y="-239.73013493253376"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="IG1-4J-Ayc">
+            <size key="intrinsicContentSize" width="46" height="33"/>
+        </designable>
+        <designable name="oxV-EH-ALU">
+            <size key="intrinsicContentSize" width="127" height="33"/>
+        </designable>
+    </designables>
     <resources>
         <image name="addChannelButton" width="22" height="22"/>
         <image name="closeButton" width="28" height="28"/>
