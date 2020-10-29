@@ -13,6 +13,7 @@
 		A30BA246253B4FE300B89E87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A30BA244253B4FE300B89E87 /* Main.storyboard */; };
 		A30BA248253B4FE600B89E87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A30BA247253B4FE600B89E87 /* Assets.xcassets */; };
 		A30BA24B253B4FE600B89E87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A30BA249253B4FE600B89E87 /* LaunchScreen.storyboard */; };
+		A3374A39254A367700B3C414 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3374A38254A367700B3C414 /* UserDataService.swift */; };
 		A344437E253DE79D00DB5239 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A344437D253DE79D00DB5239 /* GradientView.swift */; };
 		A3444382253DF46500DB5239 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3444381253DF46500DB5239 /* Constants.swift */; };
 		A3444386253DFEA900DB5239 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3444385253DFEA800DB5239 /* LoginVC.swift */; };
@@ -34,6 +35,7 @@
 		A30BA247253B4FE600B89E87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A30BA24A253B4FE600B89E87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A30BA24C253B4FE600B89E87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3374A38254A367700B3C414 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		A344437D253DE79D00DB5239 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		A3444381253DF46500DB5239 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A3444385253DFEA800DB5239 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				A374ACFF2548AE8400E42695 /* AuthService.swift */,
+				A3374A38254A367700B3C414 /* UserDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				A344437E253DE79D00DB5239 /* GradientView.swift in Sources */,
 				A30BA241253B4FE300B89E87 /* SceneDelegate.swift in Sources */,
 				A3444389253E16D100DB5239 /* CreateAccountVC.swift in Sources */,
+				A3374A39254A367700B3C414 /* UserDataService.swift in Sources */,
 				A34DCE7E25493D0F005456A4 /* RoundedButton.swift in Sources */,
 				A3444382253DF46500DB5239 /* Constants.swift in Sources */,
 				A374AD002548AE8400E42695 /* AuthService.swift in Sources */,
